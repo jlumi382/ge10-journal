@@ -31,60 +31,80 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: "Inria Sans", sans-serif;
     font-weight: 300;
     font-size: 16px;
     max-width: 100vw;
-    height: 100vh;
+    min-height: 110vh;
     background-color: var(--base);
     color: var(--text);
-    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 main {
-    width: 100%;
-    height: 100%;
+    flex-grow: 1;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
 }
 
 footer {
-    background-color: var(--crust);
-    width: 100%;
+    background-color: var(--mantle);
+    max-width: 100%;
+    height: auto;
     text-align: center;
 }
 
-
 footer a {
     text-decoration: none;
-    color: var(--red);
+    color: var(--blue);
 }
 
 footer .container {
     flex-direction: column;
+    max-width: 100%;
 }
 
+footer .container p {
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    width: 100%;
+    margin: 10px 0px; /* unfinished */
+}
+
+.accent-bar {
+    width: 100%;
+    height: 8px;
+    background-color: var(--mauve);
+    background-image: linear-gradient(90deg,var(--rosewater),var(--flamingo),var(--pink),var(--mauve),var(--red),var(--maroon),var(--peach),var(--yellow),var(--green),var(--teal),var(--sky),var(--sapphire),var(--blue),var(--lavender),var(--rosewater),var(--flamingo),var(--pink),var(--mauve),var(--red),var(--maroon),var(--peach),var(--yellow),var(--green),var(--teal),var(--sky),var(--sapphire),var(--blue),var(--lavender),var(--rosewater));
+}
 h1 {
     font-family: "Paytone One", sans-serif;
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 p {
-    font-size: clamp(1.3rem, 2vw, 1.6rem);
+    font-size: 1.5rem;
 }
 
 .container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* flex-wrap: nowrap; */
-    /* width: 80%;*/
-    /* padding: 5%;*/
-    /* padding: 10px; */
-    /* margin: 50px; */
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    padding: 0 10px;
+    margin: 0 20px;
 }
 
 .flex-item {
@@ -95,21 +115,35 @@ p {
     flex-wrap: wrap;
 }
 
-.logo-container img {
-    max-height: clamp(45px, 4vw, 60px);
+.flex-item-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
     width: auto;
+    height: auto;
+}
+
+.logo-container img {
+    max-height: 45px;
+    width: auto;
+}
+
+.item {
+    width: 100%;
 }
 
 #logo-name {
     font-family: "Paytone One", sans-serif;
     font-weight: 300;
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: 2rem;
     color: var(--mauve);
-    /*margin-left: clamp(0.8rem, 1vw, 1rem);*/
 }
 
 #school {
-    width: 50px; /* not done */
+    width: 75vw;
     height: auto;
 }
 
@@ -128,7 +162,7 @@ p {
     /*margin-right: 10px;*/
     color: var(--text);
     font-weight: bold;
-    /*font-size: clamp(0.7rem, 1.0rem, 1.25rem);*/
+    font-size: 0.7rem;
 }
 
 .navbar-container li a:hover {
@@ -144,17 +178,23 @@ p {
 
 .category-nav {
     width: 100%;
+    height: 20%;
 }
 
+.fa-graduation-cap {
+    font-weight: bold;
+    font-size: 1rem;
+}
 .category-nav button {
     border-radius: 20px;
     border: none;
-    width: clamp(10rem, 10vw, 12rem);
-    padding: clamp(0.2rem, 2vw, 0.5rem);
+    width: auto;
+    min-width: 10rem;
+    padding: 0.5rem;
     background-color: transparent;
     font-weight: bold;
-    font-size: clamp(1rem, 3vw, 1.2rem);
-    margin: clamp(0.1rem, 0.5vw, 0.2rem);
+    font-size: 1rem;
+    margin: 5px;
     color: var(--base)
 }
 
@@ -196,4 +236,14 @@ p {
 
 .reflection #community {
     color: var(--yellow);
+}
+
+@media only screen and (orientation: landscape) {
+    .item {
+        width: 50%;
+    }
+
+    #school {
+        width: 40vw;
+    }
 }
