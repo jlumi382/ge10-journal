@@ -37,7 +37,7 @@ body {
     font-weight: 300;
     font-size: 16px;
     max-width: 100vw;
-    min-height: 110vh;
+    min-height: 120vh;
     background-color: var(--base);
     color: var(--text);
     margin: 0;
@@ -47,6 +47,10 @@ body {
 header {
     max-width: 100%;
     height: auto;
+}
+
+header .container {
+    margin-top: 0.6rem;
 }
 
 main {
@@ -74,17 +78,18 @@ footer .container {
 }
 
 footer .container p {
-    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    font-size: 1rem; 
     width: 100%;
-    margin: 10px 0px; /* unfinished */
+    margin: 0.7rem 0; /* unfinished */
 }
 
 .accent-bar {
     width: 100%;
-    height: 8px;
+    height: 0.5rem;
     background-color: var(--mauve);
     background-image: linear-gradient(90deg,var(--rosewater),var(--flamingo),var(--pink),var(--mauve),var(--red),var(--maroon),var(--peach),var(--yellow),var(--green),var(--teal),var(--sky),var(--sapphire),var(--blue),var(--lavender),var(--rosewater),var(--flamingo),var(--pink),var(--mauve),var(--red),var(--maroon),var(--peach),var(--yellow),var(--green),var(--teal),var(--sky),var(--sapphire),var(--blue),var(--lavender),var(--rosewater));
 }
+
 h1 {
     font-family: "Paytone One", sans-serif;
     font-size: 2.5rem;
@@ -103,15 +108,15 @@ p {
     flex-direction: row;
     height: auto;
     width: auto;
-    padding: 0 10px;
-    margin: 0 20px;
+    padding: 0 0.7rem;
+    margin: 0 1.25rem;
 }
 
 .flex-item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 0.7rem;
     flex-wrap: wrap;
 }
 
@@ -119,6 +124,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto;
+    height: auto;
 }
 
 .logo-container {
@@ -127,7 +134,7 @@ p {
 }
 
 .logo-container img {
-    max-height: 45px;
+    max-height: 2.8rem;
     width: auto;
 }
 
@@ -140,6 +147,7 @@ p {
     font-weight: 300;
     font-size: 2rem;
     color: var(--mauve);
+    margin: auto 0;
 }
 
 #school {
@@ -152,14 +160,12 @@ p {
     justify-content: flex-start;
     align-items: center;
     list-style: none;
-    gap: 10px;
-    padding: 5px; /* not done */
+    gap: 0.7rem;
+    padding: 0.3rem; /* not done */
 }
 
 .navbar-container li a {
     text-decoration: none;
-    /*margin-left: 10px;*/
-    /*margin-right: 10px;*/
     color: var(--text);
     font-weight: bold;
     font-size: 0.7rem;
@@ -179,14 +185,14 @@ p {
 .category-nav {
     width: 100%;
     height: 20%;
+    margin-bottom: 2rem;
 }
 
-.fa-graduation-cap {
-    font-weight: bold;
-    font-size: 1rem;
-}
-.category-nav button {
-    border-radius: 20px;
+.category-nav .button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1.25rem;
     border: none;
     width: auto;
     min-width: 10rem;
@@ -194,7 +200,7 @@ p {
     background-color: transparent;
     font-weight: bold;
     font-size: 1rem;
-    margin: 5px;
+    margin: 0.3rem;
     color: var(--base)
 }
 
@@ -245,5 +251,58 @@ p {
 
     #school {
         width: 40vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .navbar-container {
+        gap: 1.25rem;
+    }
+    .navbar-container li a {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    footer .container p {
+        font-size: 1.7rem;
+        width: 100%;
+        margin: 0.9rem 0;
+    }
+
+    .category-nav .button {
+        min-width: 15rem;
+        padding: 0.7rem;
+        font-size: 1.3rem;
+        border-radius: 2.5rem;
+        margin: 0.7rem;
+    }
+
+    .container {
+        padding: 0 6rem;
+        margin: 0 10rem;
+    }
+    
+    #logo-name {
+        font-size: 3rem;
+    }
+
+    .logo-container img {
+        max-height: 3.75rem;
+        width: auto;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    header .container {
+        margin-top: 1rem;
+    }
+    
+    .flex-item {
+        gap: 1.25rem;
     }
 }
