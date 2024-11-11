@@ -342,7 +342,7 @@ footer a {
 }
 
 .flex-item.thumbnail h4 {
-    font-size: 1rem;
+    font-size: 0.5rem;
 }
 
 .flex-item.thumbnail a {
@@ -360,6 +360,7 @@ footer a {
 
 .flex-item.thumbnail .thumbnail-bottom {
     margin-top: 0.3rem;
+    gap: 0.7rem;
 }
 
 .container.reflection {
@@ -422,7 +423,7 @@ img.organizer-logo {
 }
 
 .section.p4 .contents img {
-    height: 9rem;
+    height: 12rem;
     width: auto;
     object-fit: cover;
 }
@@ -445,7 +446,7 @@ img.organizer-logo {
     }
 
     .section.p4 .contents p {
-        width: 20%;
+        width: 50%;
     }    
 }
 
@@ -522,11 +523,11 @@ img.organizer-logo {
     }
     
     .flex-item.thumbnail small {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     
     .flex-item.thumbnail h4 {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     .flex-item.thumbnail .organizer-logo {
@@ -547,6 +548,6 @@ img.organizer-logo {
     }
     
     .section.p4 .contents img {
-        height: 12rem;
+        height: 16rem;
     }
 }
