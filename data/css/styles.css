@@ -403,7 +403,9 @@ footer a {
 
 .flex-item.organizer-details img.organizer-logo {
     width: 2.8rem;
-    height: auto;
+    height: 2.8rem;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
 
 .section {
