@@ -299,6 +299,7 @@ footer a {
 
 .flex-container.home-content {
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
