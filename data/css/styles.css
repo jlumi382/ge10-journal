@@ -514,7 +514,7 @@ footer a {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     h1 {
         font-size: 3.5rem;
     }
