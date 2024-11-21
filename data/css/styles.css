@@ -34,6 +34,7 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    user-select: none;
 }
 
 
@@ -94,7 +95,16 @@ small {
     font-weight: bold;
     font-size: 1rem;
     margin: 0.3rem;
-    color: var(--base)
+    color: var(--base);
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -194,6 +204,11 @@ footer a {
 .item.logo-container img {
     max-height: 2.8rem;
     width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item.logo-container:hover img {
+    transform: scale(1.1);
 }
 
 .flex-item.navbar-container {
@@ -209,11 +224,11 @@ footer a {
     color: var(--text);
     font-weight: bold;
     font-size: 0.6rem;
+    transition: font-size 0.3s ease-in-out, 0.3s ease-in-out;
 }
 
 .flex-item.navbar-container li a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--green);
+    font-size: 0.66rem;
 }
 
 .pr-gradient {
@@ -271,6 +286,11 @@ footer a {
 .flex-item.school-container img {
     width: 75vw;
     height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.flex-item.school-container img:hover {
+    transform: scale(1.05);
 }
 
 .flex-item.nav-btn-container {
@@ -319,7 +339,7 @@ footer a {
 }
 
 .flex-container.thumbnails {
-    gap: 0.7rem;
+    gap: 1rem;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -331,6 +351,11 @@ footer a {
     border-radius: 1rem;
     overflow: hidden;
     background-color: var(--mantle);
+    transition: transform 0.3s ease-in-out;
+}
+
+.flex-item.thumbnail:hover {
+    transform: scale(1.05);
 }
 
 .flex-item.thumbnail img {
@@ -545,6 +570,10 @@ footer a {
 
     .flex-item.navbar-container li a {
         font-size: 1rem;
+    }
+
+    .flex-item.navbar-container li a:hover {
+        font-size: 1.1rem;
     }
 
     .flex-container.footer p {
