@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lilita+One&family=Paytone+One&family=Rowdies:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lilita+One&family=Paytone+One&family=Rowdies:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lilita+One&family=Paytone+One&family=Rowdies:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lilita+One&family=Paytone+One&family=Rowdies:wght@300;400;700&display=swap");
 
 :root {
     --rosewater: #f5e0dc;
@@ -36,7 +36,6 @@
     box-sizing: content-box;
     user-select: none;
 }
-
 
 h1 {
     font-family: "Paytone One", sans-serif;
@@ -80,7 +79,6 @@ small {
     font-size: 1rem;
     font-weight: bolder;
 }
-
 
 .button {
     display: inline-block;
@@ -224,7 +222,9 @@ footer a {
     color: var(--text);
     font-weight: bold;
     font-size: 0.6rem;
-    transition: font-size 0.3s ease-in-out, 0.3s ease-in-out;
+    transition:
+        font-size 0.3s ease-in-out,
+        0.3s ease-in-out;
 }
 
 .flex-item.navbar-container li a:hover {
@@ -409,7 +409,7 @@ footer a {
 
 .flex-item.thumbnail a {
     text-decoration: none;
-    color: var(--text)
+    color: var(--text);
 }
 
 .thumbnails .thumbnail a small {
